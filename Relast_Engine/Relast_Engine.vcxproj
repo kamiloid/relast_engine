@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Relast\core\Engine.cpp" />
+    <ClCompile Include="Relast\core\input\Mouse.cpp" />
+    <ClCompile Include="Relast\core\IO.cpp" />
+    <ClCompile Include="Relast\core\Math_helper.cpp" />
+    <ClCompile Include="Relast\core\Shader.cpp" />
+    <ClCompile Include="Relast\core\Texture.cpp" />
+    <ClCompile Include="Relast\core\Tools.cpp" />
+    <ClCompile Include="Relast\core\Transform.cpp" />
+    <ClCompile Include="Relast\deps\ImGizmo\ImGuizmo.cpp" />
+    <ClCompile Include="Relast\deps\ImGui\imgui.cpp" />
+    <ClCompile Include="Relast\deps\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Relast\deps\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Relast\deps\ImGui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Relast\deps\ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Relast\deps\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Relast\deps\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Relast\deps\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Relast\GUI\GUI_Engine.cpp" />
+    <ClCompile Include="Relast\scene_manager\Camera.cpp" />
+    <ClCompile Include="Relast\scene_manager\Entities.cpp" />
+    <ClCompile Include="Relast\scene_manager\Light.cpp" />
+    <ClCompile Include="Relast\scene_manager\Primitives.cpp" />
+    <ClCompile Include="Relast\scene_manager\Scene.cpp" />
+    <ClCompile Include="Relast\scene_manager\Scene_Manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Relast\core\DataType.h" />
+    <ClInclude Include="Relast\core\Engine.h" />
+    <ClInclude Include="Relast\core\GLMat.h" />
+    <ClInclude Include="Relast\core\input\Mouse.h" />
+    <ClInclude Include="Relast\core\IO.h" />
+    <ClInclude Include="Relast\core\Math_helper.h" />
+    <ClInclude Include="Relast\core\Shader.h" />
+    <ClInclude Include="Relast\core\Texture.h" />
+    <ClInclude Include="Relast\core\Tools.h" />
+    <ClInclude Include="Relast\core\Transform.h" />
+    <ClInclude Include="Relast\deps\GLEW\include\GL\eglew.h" />
+    <ClInclude Include="Relast\deps\GLEW\include\GL\glew.h" />
+    <ClInclude Include="Relast\deps\GLEW\include\GL\glxew.h" />
+    <ClInclude Include="Relast\deps\GLEW\include\GL\wglew.h" />
+    <ClInclude Include="Relast\deps\GLFW\include\GLFW\glfw3.h" />
+    <ClInclude Include="Relast\deps\GLFW\include\GLFW\glfw3native.h" />
+    <ClInclude Include="Relast\deps\ImGizmo\ImGuizmo.h" />
+    <ClInclude Include="Relast\deps\ImGui\imconfig.h" />
+    <ClInclude Include="Relast\deps\ImGui\imgui.h" />
+    <ClInclude Include="Relast\deps\ImGui\imgui_impl_glfw.h" />
+    <ClInclude Include="Relast\deps\ImGui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Relast\deps\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Relast\deps\ImGui\imgui_internal.h" />
+    <ClInclude Include="Relast\deps\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Relast\deps\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Relast\deps\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Relast\deps\Math_3D\math_3d.h" />
+    <ClInclude Include="Relast\deps\stb_image\stb_image.h" />
+    <ClInclude Include="Relast\GUI\GUI_Engine.h" />
+    <ClInclude Include="Relast\Relast_Engine.h" />
+    <ClInclude Include="Relast\scene_manager\Camera.h" />
+    <ClInclude Include="Relast\scene_manager\Entities.h" />
+    <ClInclude Include="Relast\scene_manager\Light.h" />
+    <ClInclude Include="Relast\scene_manager\Primitives.h" />
+    <ClInclude Include="Relast\scene_manager\Scene.h" />
+    <ClInclude Include="Relast\scene_manager\Scene_Manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Relast\deps\GLEW\lib\Release\Win32\glew32.lib" />
+    <Library Include="Relast\deps\GLEW\lib\Release\Win32\glew32s.lib" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3fc79050-ed20-4ad1-812c-c2b4bcdd3821}</ProjectGuid>
+    <RootNamespace>RelastEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;RELASTENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>Relast\Relast_Engine.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Relast_Engine\Relast\deps\SOIL\include;$(ProjectDir)Relast\deps\GLEW\include;$(ProjectDir)Relast\deps\GLFW\include;$(ProjectDir)Relast\deps\GLM;$(ProjectDir)Relast\deps\ImGui;$(ProjectDir)Relast\deps\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(ProjectDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(ProjectDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;RELASTENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>Relast\Relast_Engine.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Relast_Engine\Relast\deps\SOIL\include;$(ProjectDir)Relast\deps\GLEW\include;$(ProjectDir)Relast\deps\GLFW\include;$(ProjectDir)Relast\deps\GLM;$(ProjectDir)Relast\deps\ImGui;$(ProjectDir)Relast\deps\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(ProjectDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(ProjectDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;RELASTENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>Relast\Relast_Engine.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Relast_Engine\Relast\deps\SOIL\include;$(ProjectDir)Relast\deps\GLEW\include;$(ProjectDir)Relast\deps\GLFW\include;$(ProjectDir)Relast\deps\GLM;$(ProjectDir)Relast\deps\ImGui;$(ProjectDir)Relast\deps\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(ProjectDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(ProjectDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;RELASTENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>Relast\Relast_Engine.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Relast_Engine\Relast\deps\SOIL\include;$(ProjectDir)Relast\deps\GLEW\include;$(ProjectDir)Relast\deps\GLFW\include;$(ProjectDir)Relast\deps\GLM;$(ProjectDir)Relast\deps\ImGui;$(ProjectDir)Relast\deps\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(ProjectDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(ProjectDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

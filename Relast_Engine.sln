@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Relast_Engine", "Relast_Engine\Relast_Engine.vcxproj", "{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Relast_Editor", "Relast_Editor\Relast_Editor.vcxproj", "{A006C3BA-BAE2-411A-9C69-1893C209D49D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}.Debug|x64.ActiveCfg = Debug|x64
+		{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}.Debug|x64.Build.0 = Debug|x64
+		{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}.Debug|x86.ActiveCfg = Debug|Win32
+		{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}.Debug|x86.Build.0 = Debug|Win32
+		{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}.Release|x64.ActiveCfg = Release|x64
+		{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}.Release|x64.Build.0 = Release|x64
+		{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}.Release|x86.ActiveCfg = Release|Win32
+		{3FC79050-ED20-4AD1-812C-C2B4BCDD3821}.Release|x86.Build.0 = Release|Win32
+		{A006C3BA-BAE2-411A-9C69-1893C209D49D}.Debug|x64.ActiveCfg = Debug|x64
+		{A006C3BA-BAE2-411A-9C69-1893C209D49D}.Debug|x64.Build.0 = Debug|x64
+		{A006C3BA-BAE2-411A-9C69-1893C209D49D}.Debug|x86.ActiveCfg = Debug|Win32
+		{A006C3BA-BAE2-411A-9C69-1893C209D49D}.Debug|x86.Build.0 = Debug|Win32
+		{A006C3BA-BAE2-411A-9C69-1893C209D49D}.Release|x64.ActiveCfg = Release|x64
+		{A006C3BA-BAE2-411A-9C69-1893C209D49D}.Release|x64.Build.0 = Release|x64
+		{A006C3BA-BAE2-411A-9C69-1893C209D49D}.Release|x86.ActiveCfg = Release|Win32
+		{A006C3BA-BAE2-411A-9C69-1893C209D49D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7407953C-D418-4B32-90EB-096BF9427908}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a006c3ba-bae2-411a-9c69-1893c209d49d}</ProjectGuid>
+    <RootNamespace>RelastEditor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Relast_Engine\Relast\deps\SOIL\include;$(SolutionDir)Relast_Engine\Relast\deps\GLEW\include;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\include;$(SolutionDir)Relast_Engine\Relast\deps\GLM;$(SolutionDir)Relast_Engine\Relast\deps\Assimp;$(SolutionDir)Relast_Engine\Relast\deps\ImGui;$(SolutionDir)Relast_Engine\Relast\deps\ImGuizmo;$(SolutionDir)Relast_Engine\Relast\deps\Math_3D;$(SolutionDir)Relast_Engine\Relast\deps\stb_image;$(SolutionDir)Relast_Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc142-mtd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;$(SolutionDir)Relast_Engine\Relast\deps\Assimp\lib;$(SolutionDir)Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Relast_Engine\Relast\deps\SOIL\include;$(SolutionDir)Relast_Engine\Relast\deps\GLEW\include;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\include;$(SolutionDir)Relast_Engine\Relast\deps\GLM;$(SolutionDir)Relast_Engine\Relast\deps\Assimp;$(SolutionDir)Relast_Engine\Relast\deps\ImGui;$(SolutionDir)Relast_Engine\Relast\deps\ImGuizmo;$(SolutionDir)Relast_Engine\Relast\deps\Math_3D;$(SolutionDir)Relast_Engine\Relast\deps\stb_image;$(SolutionDir)Relast_Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc142-mtd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;$(SolutionDir)Relast_Engine\Relast\deps\Assimp\lib;$(SolutionDir)Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Relast_Engine\Relast\deps\SOIL\include;$(SolutionDir)Relast_Engine\Relast\deps\GLEW\include;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\include;$(SolutionDir)Relast_Engine\Relast\deps\GLM;$(SolutionDir)Relast_Engine\Relast\deps\Assimp;$(SolutionDir)Relast_Engine\Relast\deps\ImGui;$(SolutionDir)Relast_Engine\Relast\deps\ImGuizmo;$(SolutionDir)Relast_Engine\Relast\deps\Math_3D;$(SolutionDir)Relast_Engine\Relast\deps\stb_image;$(SolutionDir)Relast_Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc142-mtd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;$(SolutionDir)Relast_Engine\Relast\deps\Assimp\lib;$(SolutionDir)Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Relast_Engine\Relast\deps\SOIL\include;$(SolutionDir)Relast_Engine\Relast\deps\GLEW\include;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\include;$(SolutionDir)Relast_Engine\Relast\deps\GLM;$(SolutionDir)Relast_Engine\Relast\deps\Assimp;$(SolutionDir)Relast_Engine\Relast\deps\ImGui;$(SolutionDir)Relast_Engine\Relast\deps\ImGuizmo;$(SolutionDir)Relast_Engine\Relast\deps\Math_3D;$(SolutionDir)Relast_Engine\Relast\deps\stb_image;$(SolutionDir)Relast_Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc142-mtd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;$(SolutionDir)Relast_Engine\Relast\deps\Assimp\lib;$(SolutionDir)Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="editor\addons\Assets.cpp" />
+    <ClCompile Include="editor\addons\Console.cpp" />
+    <ClCompile Include="editor\addons\Main_menu.cpp" />
+    <ClCompile Include="editor\addons\Scene_Graph.cpp" />
+    <ClCompile Include="editor\addons\Scene_props.cpp" />
+    <ClCompile Include="editor\addons\tests\Test1.cpp" />
+    <ClCompile Include="editor\addons\Toolbox.cpp" />
+    <ClCompile Include="editor\addons\Transform_control.cpp" />
+    <ClCompile Include="editor\Editor.cpp" />
+    <ClCompile Include="editor\Input_gestures.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Relast_Engine\Relast_Engine.vcxproj">
+      <Project>{3fc79050-ed20-4ad1-812c-c2b4bcdd3821}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="editor\addons\addons_headers.h" />
+    <ClInclude Include="editor\addons\Assets.h" />
+    <ClInclude Include="editor\addons\Console.h" />
+    <ClInclude Include="editor\addons\Main_menu.h" />
+    <ClInclude Include="editor\addons\Scene_Graph.h" />
+    <ClInclude Include="editor\addons\Scene_props.h" />
+    <ClInclude Include="editor\addons\tests\Test1.h" />
+    <ClInclude Include="editor\addons\Toolbox.h" />
+    <ClInclude Include="editor\addons\Transform_control.h" />
+    <ClInclude Include="editor\Editor.h" />
+    <ClInclude Include="editor\Input_gestures.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\shaders\basic.shader" />
+    <None Include="res\shaders\basic2.shader" />
+    <None Include="res\shaders\basic3.shader" />
+    <None Include="res\shaders\light.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\fonts\droid-sans\DroidSans-Bold.ttf" />
+    <Font Include="res\fonts\droid-sans\DroidSans.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-Black.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-BlackItalic.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-Bold.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-BoldItalic.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-Italic.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-Light.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-LightItalic.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-Medium.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-MediumItalic.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-Regular.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-Thin.ttf" />
+    <Font Include="res\fonts\Roboto\Roboto-ThinItalic.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
