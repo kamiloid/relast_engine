@@ -250,6 +250,11 @@ void Editor::loop()
 	glm::vec3 mouse_angles = glm::vec3();
 	glm::vec3 new_cam_pos = main_camera->_transform._position;
 
+
+	addons::Viewport_renderer_config* vpconfig = new addons::Viewport_renderer_config("test");
+	addons::Viewport_renderer* vport = new addons::Viewport_renderer(vpconfig);
+
+
 	////-----
 	bool show_demo_window = true;
 	while (!this->_engine->run())
@@ -540,6 +545,8 @@ void Editor::loop()
 		shader3->get_uniform("u_light1.specular_level")->set_args(main_light->specular_level_uniform());
 
 		this->_engine->render();
+
+		vport->init();
 		
 		Relast::imgui::render();
 

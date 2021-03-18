@@ -96,6 +96,7 @@
       <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc142-mtd.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;$(SolutionDir)Relast_Engine\Relast\deps\Assimp\lib;$(SolutionDir)Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -115,6 +116,7 @@
       <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc142-mtd.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;$(SolutionDir)Relast_Engine\Relast\deps\Assimp\lib;$(SolutionDir)Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -130,6 +132,7 @@
       <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc142-mtd.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;$(SolutionDir)Relast_Engine\Relast\deps\Assimp\lib;$(SolutionDir)Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -149,6 +152,7 @@
       <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;assimp-vc142-mtd.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Relast_Engine\Relast\deps\GLEW\lib\Release\Win32;$(SolutionDir)Relast_Engine\Relast\deps\GLFW\lib-vc2019;$(SolutionDir)Relast_Engine\Relast\deps\Assimp\lib;$(SolutionDir)Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="editor\addons\Assets.cpp" />
@@ -159,6 +163,7 @@
     <ClCompile Include="editor\addons\tests\Test1.cpp" />
     <ClCompile Include="editor\addons\Toolbox.cpp" />
     <ClCompile Include="editor\addons\Transform_control.cpp" />
+    <ClCompile Include="editor\addons\Viewport_renderer.cpp" />
     <ClCompile Include="editor\Editor.cpp" />
     <ClCompile Include="editor\Input_gestures.cpp" />
     <ClCompile Include="main.cpp" />
@@ -178,6 +183,7 @@
     <ClInclude Include="editor\addons\tests\Test1.h" />
     <ClInclude Include="editor\addons\Toolbox.h" />
     <ClInclude Include="editor\addons\Transform_control.h" />
+    <ClInclude Include="editor\addons\Viewport_renderer.h" />
     <ClInclude Include="editor\Editor.h" />
     <ClInclude Include="editor\Input_gestures.h" />
   </ItemGroup>

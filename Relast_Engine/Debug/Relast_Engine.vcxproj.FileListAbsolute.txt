@@ -1,2 +1,8 @@
 C:\Camilo\projects\C++\Relast_1\Relast_Engine_1\Relast_Engine\Debug\Relast_Engine.pdb
 C:\Camilo\projects\C++\Relast_1\Relast_Engine_1\Relast_Engine\Relast_Engine\Debug\Relast_Engine.pdb
+C:\Camilo\projects\C++\Relast_1\Relast_Engine\Relast_Engin_base\Debug\Relast_Engine.pdb
+C:\Camilo\projects\C++\Relast_1\Relast_Engine\Relast_Engin_base\Relast_Engine\Debug\Relast_Engine.pdb
+C:\Camilo\projects\C++\Relast_1\Relast_Engine\bitbucket\Debug\Relast_Engine.pdb
+C:\Camilo\projects\C++\Relast_1\Relast_Engine\bitbucket\Relast_Engine\Debug\Relast_Engine.pdb
+C:\Camilo\projects\C++\Relast_1\Relast_Engine\github\Debug\Relast_Engine.pdb
+C:\Camilo\projects\C++\Relast_1\Relast_Engine\github\Relast_Engine\Debug\Relast_Engine.pdb
